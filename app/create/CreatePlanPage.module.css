@@ -1,0 +1,111 @@
+.container {
+  max-width: 650px;
+  margin: 3.5rem auto;
+  padding: 2.5rem;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(14, 165, 233, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(14, 165, 233, 0.25);
+}
+
+.heading {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #e2e8f0;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 0.02em;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.input {
+  padding: 1rem 1.5rem;
+  font-size: 1.05rem;
+  border: 2px solid #334155;
+  border-radius: 12px;
+  background: #1e293b;
+  color: #e2e8f0;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #0ea5e9;
+  box-shadow: 0 0 0 4px rgba(14, 165, 233, 0.2);
+  transform: scale(1.01);
+}
+
+.input::placeholder {
+  color: #94a3b8;
+  font-style: normal;
+  font-family: 'Inter', sans-serif;
+}
+
+textarea.input {
+  min-height: 160px;
+  resize: vertical;
+}
+
+.label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #cbd5e1;
+  margin-bottom: 0.5rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.button {
+  padding: 1rem;
+  background: linear-gradient(90deg, #0ea5e9, #38bdf8);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.15rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+  background: linear-gradient(90deg, #0284c7, #0ea5e9);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(14, 165, 233, 0.3);
+}
+
+.button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 8px rgba(14, 165, 233, 0.2);
+}
+
+.message {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #38bdf8;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  animation: slideIn 0.6s ease-in-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
